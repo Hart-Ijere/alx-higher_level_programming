@@ -1,0 +1,1 @@
+This directory is about my Python-Data stucture, Tuples and List.
