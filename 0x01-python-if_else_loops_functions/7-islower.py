@@ -1,4 +1,4 @@
-#!/bin/usr/python3
+#!/usr/bin/python3
 def islower(c):
     """ check for a lower case character.
 
