@@ -5,6 +5,7 @@ def islower(c):
     Args:
     c(chr) alphabet to be checked.
     """
+    
     if ord(c) in range(97,123):
         print("{} is lower".format(c))
     else:
