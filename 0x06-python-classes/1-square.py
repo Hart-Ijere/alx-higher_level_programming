@@ -3,6 +3,7 @@
 This module is a representation of a class square.
 """
 
+
 class Square:
     """
     This class is a representation if a
@@ -16,7 +17,7 @@ class Square:
 
 
         Args:
-            size: size of the square.
+            size (int): size of the square.
         """
 
         self.__size = size
