@@ -14,6 +14,7 @@ class Square:
         Initialize a new instance of the
         square class.
 
+
         Args:
             size: size of the square.
         """
