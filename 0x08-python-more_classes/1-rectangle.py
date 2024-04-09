@@ -7,26 +7,26 @@ class Rectangle:
     def __init__(self, width=0, height=0):
         """initialize width and height """
         self._width = width
-        seld._height = height
+        self._height = height
         
     @property
     def width(self):
         """retrieves value of width """
-        return swlf._width
+        return self._width
 
     @width.setter
     def width(self, value):
         """set value to width """
 
-        if not isinstance(width, int):
+        if not isinstance(value, int):
             raise TypeError("width must be an integer")
-        if width < 0:
+        if value < 0:
             raise ValueError("width must be > 0")
         self._width = value
 
 
     @property
-    def height(seld):
+    def height(self):
         """retrieve value of height """
         
         return self._height
@@ -36,9 +36,9 @@ class Rectangle:
     def height(self, value):
         """set value of height. """
 
-        if not isinstance(height, int):
+        if not isinstance(value, int):
             raise TypeError("height must be an integer")
-        if height < 0:
+        if value < 0:
             raise ValueError("height must be >= 0")
         self._height = value
 
