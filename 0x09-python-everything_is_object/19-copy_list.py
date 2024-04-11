@@ -1,4 +1,4 @@
 #!/usr/bin/python3
 def copy_list(l):
-    copied  = l[ : ]
-    return copied
+    """Return copy of a list """
+    return l[:]
