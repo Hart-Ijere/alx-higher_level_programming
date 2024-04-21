@@ -1,39 +1,14 @@
-"""This file contains test cases for add_integer function. """
-
-import unittest
-from 0-add_integer import add_integer
-
-class TestAddInteger(unittest.TestCase):
-    """Tests cases of inputs for a funtion that adds two inteders """
-
-
-    def test_add_integer(self):
-        """ Tests various inputs to validate and confirm the addition of two integers"""
-	if not isinstance(a, (int, float)):
-	    raise TypeError("a must be an integer or a float")
-	    
-	if not isinstance(b, (int, float)):
-	    raise TypeError("b must be an integer or float")
-	    
-	if isinstance(a, float):
-	    a = int(a)
-
-        if isinstance(b, float):
-	    b = int(b)
-
-        added = add_integer(5, 4)
-	self.assertEqual(added, 9)
-
-        added = add_integer(-5, 15)
-	self.assertEqual(added, -20)
-
-        added = add_interger(0, 0)
-	self.assertEqual(added, 0)
-
-        added = add_integer(-5, 7)
-	self.assertEqual(added, 2)
-
-
-        if __name__ == "__main__":
-	    unittest.main()
-
+>>> add_integer(1, 2)
+3
+>>> add_integer(100, -2)
+98
+>>> add_integer(100.3, -2)
+98
+>>> add_integer(2))
+SyntaxError: unmatched ')'
+>>> add_integer(4, "School"))
+TypeError: b must be an integer
+>>> add_integer("School", 4)
+TypeError: a must be a integer
+>>> add_integer(None)
+TypeError: a must be a integer
