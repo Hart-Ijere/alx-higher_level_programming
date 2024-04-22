@@ -10,4 +10,7 @@ def read_file(filename=""):
     """
     with open("filename", "r") as fd:
         read_data = fd.read()
-        print(read_data)
+        for line in read_data:
+            print(line, end="")
+            
+        
