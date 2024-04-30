@@ -1,9 +1,8 @@
 #!/usr/bin/python3
 
 class LockedClass:
-    __slots__ = ('first_name',)
+    def __setattr__(self,name, value):
+        if hasattr(self, name) and name != 'first_name':
+            raise AttributeError("Cannot modify existing attributes")
+        super().__setattr__(name, value)
 
-    def __getattr__(self, name, value):
-        if not hasattr(self, 'first_name') and name != 'first_name':
-            raise AttributeError(f"Cannot create new instance attribute '{name}'")
-        super().__getattr__(name, value)
