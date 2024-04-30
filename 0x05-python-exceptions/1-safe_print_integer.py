@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-def def safe_print_integer(value):
+def safe_print_integer(value):
     if value != '\0':
         try:
             if isinstance(value, int):
