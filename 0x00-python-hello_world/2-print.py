@@ -1,5 +1,3 @@
 #!/usr/bin/python3
-
-print('\"Programming is like building '
-      'a multilingual puzzle')
-
+myWord = "Programming is like building a multiligual puzzle"
+print(myWord)
