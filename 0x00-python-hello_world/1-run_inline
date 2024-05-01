@@ -7,7 +7,7 @@ if [ -z "$PYCODE" ]; then
 fi
 
 # Create a temporary Python file
-tmpfile=$(mktemp)
+tmpfile=$(mktemp /tmp/temporary-python-script-XXXXXX.py)
 echo "$PYCODE" > "$tmpfile"
 
 # Run the Python code
@@ -15,5 +15,6 @@ python "$tmpfile"
 
 # Remove the temporary file
 rm "$tmpfile"
+
 
 
