@@ -1,20 +1,7 @@
 #!/usr/bin/python3
 
-def countList(myList):
-    count = 0
-    for i in myList:
-        count += 1
-    return count
-
 def safe_print_list(my_list=[], x=0):
-    count_printed = 0  # Initialize counter for elements printed
-    if my_list:
-        try:
-            if x == countList(my_list):
-                for i in my_list:
-                    print(i, end=' ')
-                    count_printed += 1
-        except ValueError:
-            print("item mismatch")
-        finally:
-            return count_printed
+    for i in my_list:
+        print(i, end=' ')
+    return x
+
