@@ -1,0 +1,26 @@
+#!/usr/bin/python3
+def countAll(myList=[]):
+    count = 0
+    for i in myList:
+        count += 1
+    return count
+
+
+def safe_print_list_integers(my_list=[], x=0):
+    countInt = 0
+    try:
+        for i in range(x):
+            if x > countAll(my_list):
+                raise ValueError
+            if isinstance(my_list[i], int):
+                print("{:d}".format(my_list[i]), end='')
+                countInt += 1
+    except TypeError:
+        pass
+    except ValueError:
+        print("{:d} greater than mylist".format(x))
+    except IndexError:
+        print("List index out of range")
+    finally:
+        print()
+        return countInt
