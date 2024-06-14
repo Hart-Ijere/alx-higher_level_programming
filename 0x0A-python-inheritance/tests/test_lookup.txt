@@ -1,0 +1,10 @@
+>>> class MyClass:
+...     def my_method(self):
+...         pass
+>>> obj = MyClass()
+>>> 'my_method' in lookup(obj)
+True
+>>> '__init__' in lookup(obj)
+True
+>>> isinstance(lookup(obj), list)
+True
