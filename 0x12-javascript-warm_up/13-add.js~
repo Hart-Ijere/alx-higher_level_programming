@@ -1,0 +1,9 @@
+#!/usr/bin/node
+
+// Import the add function from 13-add.js
+const add = require('./13-add');
+
+// Test the add function
+console.log(add(2, 3)); // Outputs: 5
+console.log(add(10, 20)); // Outputs: 30
+console.log(add(-5, 5)); // Outputs: 0
