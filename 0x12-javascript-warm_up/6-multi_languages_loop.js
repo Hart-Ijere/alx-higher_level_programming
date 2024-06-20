@@ -9,5 +9,5 @@ const lines = [
 
 // Loop through the array and output each element
 for (let i = 0; i < lines.length; i++) {
-    console.log(lines[i]);
+  /console.log(lines[i]);
 }
