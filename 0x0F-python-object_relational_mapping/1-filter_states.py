@@ -30,7 +30,8 @@ def list_states_with_n(username, password, dbname):
     )
 
     cursor = db.cursor()
-    query = "SELECT * FROM states WHERE name LIKE 'N%' ORDER BY id ASC"
+    query = ("SELECT * FROM states WHERE name LIKE 'N%' "
+             "ORDER BY id ASC")
     cursor.execute(query)
     states = cursor.fetchall()
 
@@ -46,4 +47,3 @@ if __name__ == '__main__':
     password = sys.argv[2]
     dbname = sys.argv[3]
     list_states_with_n(username, password, dbname)
-
