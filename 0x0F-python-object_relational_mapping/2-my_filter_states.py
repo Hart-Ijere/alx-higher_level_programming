@@ -15,18 +15,20 @@ if __name__ == "__main__":
     state_name = sys.argv[4]
 
     # Connect to MySQL server
-    db = MySQLdb.connect(host="localhost", user=username, passwd=password, db=database, port=3306)
+    db = MySQLdb.connect(host="localhost", user=username, passwd=password,
+                         db=database, port=3306)
     cursor = db.cursor()
 
     # Create SQL query using format to match state name
-    query = "SELECT * FROM states WHERE name LIKE BINARY '{}' ORDER BY id ASC".format(state_name)
+    query = ("SELECT * FROM states WHERE name LIKE BINARY '{}'"
+             " ORDER BY id ASC".format(state_name))
 
     # Execute the query
     cursor.execute(query)
-    
+
     # Fetch all results
     rows = cursor.fetchall()
-    
+
     # Print results
     for row in rows:
         print(row)
